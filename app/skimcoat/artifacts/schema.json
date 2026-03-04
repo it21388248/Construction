@@ -1,0 +1,43 @@
+{
+  "model_inputs": [
+    "WallSize_sqft",
+    "PricePerSqft_LKR",
+    "Location",
+    "SurfaceMaterial",
+    "MoistureLevel",
+    "SubstrateCondition",
+    "CoatsNeeded",
+    "FinishLevel"
+  ],
+  "model_output": "Brand",
+  "categorical_allowed_values": {
+    "Location": [
+      "indoor",
+      "outdoor"
+    ],
+    "SurfaceMaterial": [
+      "cement-plaster",
+      "concrete",
+      "gypsum-board",
+      "plaster"
+    ],
+    "MoistureLevel": [
+      "high",
+      "low",
+      "medium"
+    ],
+    "SubstrateCondition": [
+      "cracked",
+      "new",
+      "old"
+    ],
+    "FinishLevel": [
+      "basic",
+      "premium-smooth",
+      "smooth"
+    ]
+  },
+  "notes": {
+    "PricePerSqft_LKR": "If app takes Budget_LKR, compute PricePerSqft_LKR = Budget_LKR / WallSize_sqft"
+  }
+}
