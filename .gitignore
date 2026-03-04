@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+venv/
+.env
+.vscode/
+Thumbs.db
+.DS_Store
+
+# ML artifacts
+*.joblib
+*.pkl
+*.zip
+
+# datasets
+*.csv

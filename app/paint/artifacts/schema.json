@@ -1,0 +1,47 @@
+{
+  "model_inputs": [
+    "WallSize_sqft",
+    "PricePerSqft_LKR",
+    "CoatsNeeded",
+    "Location",
+    "SurfaceMaterial",
+    "FinishType",
+    "MoistureLevel",
+    "PaintType"
+  ],
+  "model_outputs": [
+    "PaintBrand",
+    "PaintGrade"
+  ],
+  "categorical_allowed_values": {
+    "Location": [
+      "floor",
+      "indoor",
+      "outdoor",
+      "wood"
+    ],
+    "SurfaceMaterial": [
+      "concrete",
+      "plaster",
+      "wood"
+    ],
+    "FinishType": [
+      "gloss",
+      "matte",
+      "satin"
+    ],
+    "MoistureLevel": [
+      "high",
+      "low",
+      "medium"
+    ],
+    "PaintType": [
+      "emulsion",
+      "enamel",
+      "weatherproof"
+    ]
+  },
+  "notes": {
+    "PricePerSqft_LKR": "If your app takes Budget_LKR, compute PricePerSqft_LKR = Budget_LKR / WallSize_sqft"
+  }
+}
